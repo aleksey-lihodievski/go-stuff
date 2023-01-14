@@ -71,7 +71,18 @@ func bitShifts() {
 	fmt.Println(a<<3, b>>1)
 }
 
+func bitShifts2() {
+	fmt.Println(1 << 10) // 1024
+}
+
+func iotaFunc() {
+	const some = iota
+	fmt.Println(some)
+}
+
 func Run() {
 	// switches()
 	// bitShifts()
+	// bitShifts2()
+	// iotaFunc()
 }

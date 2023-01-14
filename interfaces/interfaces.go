@@ -15,11 +15,15 @@ type HelloGoodbye interface {
 	Goodbye
 }
 
+type HelloGoodbye2 interface {
+	HelloStruct | GoodbyeStruct
+}
+
 func PrintHello(hello Hello) {
 	fmt.Println(hello)
 }
 
-func Run() {
+func Demo() {
 	var h1 HelloGoodbye
 	var h2 HelloGoodbye
 	// is assignable
@@ -37,7 +41,10 @@ func Run() {
 
 	// can not be assigned because HelloStruct2 recieves pointer
 	// h = hp
+}
 
+func Run() {
+	// Demo()
 }
 
 type HelloStruct struct {
@@ -52,6 +59,7 @@ type GoodbyeStruct struct {
 func (h *HelloStruct) SayHello() {
 	fmt.Println("Hello", h.Name)
 }
+
 func (h *HelloStruct) SayGoodbye() {
 	fmt.Println("Goodbye", h.Name)
 }
