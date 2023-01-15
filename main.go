@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/aleksey-lihodievski/course/arraysAndSlices"
+	"github.com/aleksey-lihodievski/course/customContext"
 	"github.com/aleksey-lihodievski/course/customErrors"
 	"github.com/aleksey-lihodievski/course/features"
 	"github.com/aleksey-lihodievski/course/functions"
@@ -20,6 +21,7 @@ func main() {
 	customErrors.Run()
 	generics.Run()
 	interfaces.Run()
+	customContext.Run()
 
 	fmt.Println("After all program")
 }
