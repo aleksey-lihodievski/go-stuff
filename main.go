@@ -9,7 +9,9 @@ import (
 	"github.com/aleksey-lihodievski/course/features"
 	"github.com/aleksey-lihodievski/course/functions"
 	"github.com/aleksey-lihodievski/course/generics"
+	"github.com/aleksey-lihodievski/course/goroutines"
 	"github.com/aleksey-lihodievski/course/interfaces"
+	"github.com/aleksey-lihodievski/course/mutexes"
 	"github.com/aleksey-lihodievski/course/types"
 )
 
@@ -22,6 +24,8 @@ func main() {
 	generics.Run()
 	interfaces.Run()
 	customContext.Run()
+	goroutines.Run()
+	mutexes.Run()
 
 	fmt.Println("After all program")
 }
