@@ -11,6 +11,7 @@ import (
 	"github.com/aleksey-lihodievski/course/generics"
 	"github.com/aleksey-lihodievski/course/goroutines"
 	"github.com/aleksey-lihodievski/course/interfaces"
+	"github.com/aleksey-lihodievski/course/marshalling"
 	"github.com/aleksey-lihodievski/course/mutexes"
 	"github.com/aleksey-lihodievski/course/types"
 )
@@ -26,6 +27,7 @@ func main() {
 	customContext.Run()
 	goroutines.Run()
 	mutexes.Run()
+	marshalling.Run()
 
 	fmt.Println("After all program")
 }
