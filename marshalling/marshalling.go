@@ -11,7 +11,7 @@ type Book struct {
 	Date   string `json:"date"`
 }
 
-func Run() {
+func DemoMarshalling() {
 	b := Book{
 		Title:  "The Hitchhiker's Guide to the Galaxy",
 		Author: "Douglas Adams",
@@ -52,5 +52,10 @@ func Run() {
 	// 		fmt.Printf("Unmarshalled book:\n%+v\n\n", newBook)
 	// 	}
 	// }
+
+}
+
+func Run() {
+	// DemoMarshalling()
 
 }

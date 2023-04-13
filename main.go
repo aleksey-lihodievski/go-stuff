@@ -13,6 +13,8 @@ import (
 	"github.com/aleksey-lihodievski/course/interfaces"
 	"github.com/aleksey-lihodievski/course/marshalling"
 	"github.com/aleksey-lihodievski/course/mutexes"
+	"github.com/aleksey-lihodievski/course/orm"
+	"github.com/aleksey-lihodievski/course/problems"
 	"github.com/aleksey-lihodievski/course/types"
 )
 
@@ -28,6 +30,9 @@ func main() {
 	goroutines.Run()
 	mutexes.Run()
 	marshalling.Run()
+	orm.Run()
+
+	problems.SolveProblems()
 
 	fmt.Println("After all program")
 }
